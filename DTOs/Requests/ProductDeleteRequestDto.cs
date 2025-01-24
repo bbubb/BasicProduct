@@ -2,5 +2,6 @@
 {
     public class ProductDeleteRequestDto
     {
+        public Guid Guid { get; set; }
     }
 }

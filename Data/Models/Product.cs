@@ -1,13 +1,15 @@
+using System.Data.SqlTypes;
+
 namespace BasicProduct
 {
-    public class WeatherForecast
+    public class Product
     {
-        public DateOnly Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
+        public Guid Guid { get; set; }
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+        public SqlMoney Price { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }
